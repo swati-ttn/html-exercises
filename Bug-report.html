@@ -7,18 +7,18 @@
     <style type="text/css">
     * {
             margin: 0;
-            padding: 0;
+            padding:0%;
             box-sizing: border-box;
         }
         
         html,
         body {
             width: 100%;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Times New Roman';
         }
         
         body {
-            padding-bottom: 5rem;
+            padding-bottom: 50rem;
             margin-right: 20px;
             margin-left: 20px;
             background-color:floralwhite;border-style: groove;
@@ -41,7 +41,6 @@ body section {
   margin: 8px 0;
   box-sizing: border-box;
   border: 3px solid #ccc;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
 }
@@ -57,7 +56,6 @@ input[type=text]:focus {
   display: block;
 }
 
-.dropdown-content a:hover {background-color:springgreen}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -81,10 +79,12 @@ input[type=text]:focus {
 
 .container input, .container textarea, .container select {
             width: 100%;
-            padding: 0.25rem 0.5rem;
+            padding: 0.50rem 0.50rem;
             border-width: 1px;
             border-color: var(--bg-dark);
             border-radius: 4px;
+            padding-bottom: 1rem;
+
         }
 
         .form .radio-group .group-row {
@@ -105,58 +105,60 @@ input[type=text]:focus {
               <a href="#Quick">Quick</a>
             </div>
     </header>
+
             <div class="container">
-        <hr class="divider">
-			<div class="form-format">
-				<h2 class="form-format">Bug Report</h2>
+            <hr class="divider">
+              <div class="form-format">
+              <h2 class="form-format">Bug Report</h2>
             </div>
-                <section>
+              
+              
+            <section>
                     <form>
                         <label for="ftitle">Title*</label><br />
-                        <input type="text" id="ftitle" name="ftitle" value=""><br /> 
+                        <input type="text" id="ftitle" name="ftitle" value=""><br /> <br/>
+
                         <label for="fdesc">Description</label><br />
-                        <input type=textarea rows="6" cols="50" id="fdesc" name="fdesc" value=""><br />
+                        <input type=textarea rows="6" cols="50" id="fdesc" name="fdesc" value=""><br /><br />
                         
-                        <label for="fos">Operating System *</label><br />
+                        <label for="fos">Operating System *</label><br /><br />
                         <select name="fos"> 
                             <option value="Linux">Linux</option>
                             <option value="Windows">Windows</option>
                             <option value="MacOS">MacOS</option>
-                        </select><br />
+                        </select><br /><br />
             
             
-                        <label for="pro">Product*</label><br />
+                        <label for="pro">Product*</label><br /><br/>
                         <select name="pro"> 
                             <option value="Drupal">Drupal</option>
                             <option value="Joomla">Joomla</option>
                             <option value="Wordpress">Wordpress</option>
-                        </select><br />
+                        </select><br /><br />
             
             
                         <label for="fversion">Version</label><br />
-                        <input type="text" name="fversion" value=""><br />
+                        <input type="text" name="fversion" value=""><br /><br />
             
                          
                         <label for="Lic">License*</label><br />
                         <input type="radio" id="html" name="License" value="Free">
                         <label for="free-lic">Free</label>
-                       <input type="radio" id="Paid-lic" name="License" value="Paid">
-                       <label for="free-lic">Paid</label><br>
+                        <input type="radio" id="Paid-lic" name="License" value="Paid">
+                        <label for="paid-lic">Paid</label><br><br />
               
                         <label for="sev">Severity</label><br />
                         <select name="sev"> 
                             <option value="Critical">Critical</option>
                             <option value="Sigificant">Significant Impact</option>
                             <option value="Minor">Minor</option>
-                        </select><br />
+                        </select><br /><br />
                          
                         Attachment<br />
                         <input type="File" name="Swati" >
+        
             
-            
-            
-            
-                      </form>
-                </section>
-            </div>
+                    </form>
+              </section>
+            <div />
     </body>
