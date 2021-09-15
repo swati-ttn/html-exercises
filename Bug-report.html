@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BUG REPORT</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        body {
+            padding-bottom: 5rem;
+            margin-right: 20px;
+            margin-left: 20px;
+            background-color:floralwhite;border-style: groove;
+            }
+
+body section {
+    background-color: floralwhite;
+    padding-left: 30%;
+    padding-right: 30%;
+            }
+
+.form-format{
+        background-color:grey;
+        padding: 10px;
+        text-align: left;
+      }
+.input[type=text][type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 2px solid #555;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:springgreen}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.topnav {
+  overflow: hidden;
+}
+
+.topnav-right {
+  float: right;
+  color :lightblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.container input, .container textarea, .container select {
+            width: 100%;
+            padding: 0.25rem 0.5rem;
+            border-width: 1px;
+            border-color: var(--bg-dark);
+            border-radius: 4px;
+        }
+
+        .form .radio-group .group-row {
+            display: flex;
+        }
+        
+
+</style>
+</head>
+
+    <body>
+    <header id="header">
+        <h1 class="heading">TO THE NEW</h1>
+
+        <div class="topnav">
+            <div class="topnav-right">
+              <a href="#Home">Home</a>
+              <a href="#Quick">Quick</a>
+            </div>
+    </header>
+            <div class="container">
+        <hr class="divider">
+			<div class="form-format">
+				<h2 class="form-format">Bug Report</h2>
+            </div>
+                <section>
+                    <form>
+                        <label for="ftitle">Title*</label><br />
+                        <input type="text" id="ftitle" name="ftitle" value=""><br /> 
+                        <label for="fdesc">Description</label><br />
+                        <input type=textarea rows="6" cols="50" id="fdesc" name="fdesc" value=""><br />
+                        
+                        <label for="fos">Operating System *</label><br />
+                        <select name="fos"> 
+                            <option value="Linux">Linux</option>
+                            <option value="Windows">Windows</option>
+                            <option value="MacOS">MacOS</option>
+                        </select><br />
+            
+            
+                        <label for="pro">Product*</label><br />
+                        <select name="pro"> 
+                            <option value="Drupal">Drupal</option>
+                            <option value="Joomla">Joomla</option>
+                            <option value="Wordpress">Wordpress</option>
+                        </select><br />
+            
+            
+                        <label for="fversion">Version</label><br />
+                        <input type="text" name="fversion" value=""><br />
+            
+                         
+                        <label for="Lic">License*</label><br />
+                        <input type="radio" id="html" name="License" value="Free">
+                        <label for="free-lic">Free</label>
+                       <input type="radio" id="Paid-lic" name="License" value="Paid">
+                       <label for="free-lic">Paid</label><br>
+              
+                        <label for="sev">Severity</label><br />
+                        <select name="sev"> 
+                            <option value="Critical">Critical</option>
+                            <option value="Sigificant">Significant Impact</option>
+                            <option value="Minor">Minor</option>
+                        </select><br />
+                         
+                        Attachment<br />
+                        <input type="File" name="Swati" >
+            
+            
+            
+            
+                      </form>
+                </section>
+            </div>
+    </body>
